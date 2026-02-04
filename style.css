@@ -1,0 +1,102 @@
+/* =========================
+   TIRHAL | Luxury Oud Theme
+   ========================= */
+
+body {
+  background-color: #0f0f0f;
+  color: #eae6dc;
+  font-family: "Cairo", "Tajawal", sans-serif;
+}
+
+/* Header */
+header, .site-header {
+  background: linear-gradient(
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.85)
+  ),
+  url('https://images.unsplash.com/photo-1504711434969-e33886168f5c') center/cover no-repeat;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Logo */
+.site-logo, .logo {
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #d6b36a;
+}
+
+/* Main Banner */
+.hero, .banner, .main-banner {
+  background: linear-gradient(
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.85)
+  ),
+  url('https://images.unsplash.com/photo-1602524811807-92f53219e09a') center/cover no-repeat;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.hero h1, .banner h1 {
+  font-size: 42px;
+  color: #d6b36a;
+  letter-spacing: 3px;
+}
+
+.hero p, .banner p {
+  font-size: 16px;
+  opacity: 0.85;
+}
+
+/* Buttons */
+button, .btn, .add-to-cart {
+  background: linear-gradient(135deg, #bfa25a, #e6c87a);
+  color: #111;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(214,179,106,0.35);
+}
+
+/* Product Cards */
+.product, .product-card {
+  background: rgba(20,20,20,0.9);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* Price */
+.price {
+  color: #d6b36a;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background: #0b0b0b;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  color: #aaa;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Smoke subtle effect */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
+  opacity: 0.15;
+  pointer-events: none;
+}
